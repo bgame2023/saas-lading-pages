@@ -1,0 +1,258 @@
+/* General Styles */
+.pricing-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(92deg, #dff1ee, white);
+
+}
+
+h2 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  font-weight: 800;
+  width: 700px;
+  text-align: center;
+  margin: auto;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.billing-option {
+  border: none;
+  background: #f0f0f0;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.billing-option.active {
+  background: #00bfa6;
+  color: white;
+}
+
+/* Plans Section */
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  height: 600px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease; 
+}
+
+.plan-card h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.plan-card p {
+  font-size: 1.2em;
+  color: #a8a8a8;
+  margin: 0 auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+.plan-card h1 {
+  font-size: 3em;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.plan-card ul-container {
+  background: #ff0000;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  background: #abd5ff;
+  border-radius: 10px;
+}
+
+.card-center ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.plan-card ul li {
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* Buttons */
+.plan-button-center {
+  background: #00bfa6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border-radius: 7px;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.plan-button {
+  background: #ffffff;
+  color: #00bfa6;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 100;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 80%;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.plan-button-center-bot {
+  background: #00bfa6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 300;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 80%;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.plan-card.highlighted {
+  border: 2px solid #00bfa6;
+  transform: scale(1.05);
+}
+
+/* Hover effect */
+.plan-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .pricing-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .billing-toggle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .plans {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .plan-card {
+    width: 90%;
+    max-width: 350px; 
+    height: auto; 
+    margin: 10px auto;
+  }
+
+  .plan-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .plan-card h1 {
+    font-size: 2.5rem;
+  }
+
+  .plan-button, .plan-button-center-bot, .plan-button-center {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .plan-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .plan-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .plan-card h1 {
+    font-size: 2rem;
+  }
+
+  .plan-button, .plan-button-center-bot, .plan-button-center {
+    width: 80%;
+  }
+}

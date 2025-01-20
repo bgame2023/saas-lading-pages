@@ -1,0 +1,109 @@
+/* top.css */
+.top-container {
+  background: linear-gradient(92deg, #dff1ee, white);
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 50px;
+  color: #54bd95;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #54bd95;
+}
+
+.login-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.btn-signup {
+  background: #54bd95;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+}
+
+.btn-signup:hover {
+  background: #3ca779;
+}
+
+.headline {
+  font-size: 60px;
+  color: #222;
+  line-height: 1.2;
+}
+
+.subtext {
+  color: #555;
+}
+
+.btn-trial {
+  background: #54bd95;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+}
+
+.btn-trial:hover {
+  background: #3ca779;
+}
+
+.view-demo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #54bd95;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  display: inline-block;
+  border: solid #54bd95;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.demo-text {
+  font-size: 13px;
+  color: #54bd95;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 40px;
+  }
+
+  .btn-trial,
+  .btn-signup {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .view-demo .demo-text {
+    font-size: 12px;
+  }
+}

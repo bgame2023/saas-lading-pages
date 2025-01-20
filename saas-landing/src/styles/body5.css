@@ -1,0 +1,225 @@
+/* body5.css */
+.body5-container {
+  background-color: #161C28;
+  color: #fff;
+  padding: 60px 0;
+  padding-left: 15px; /* Thêm khoảng cách giữa lề trái và nội dung */
+  padding-right: 15px; /* Đảm bảo khoảng cách phải phù hợp */
+}
+
+.testimonial-section {
+  margin: 0;
+  padding: 0;
+}
+
+  .testimonial-section {
+    margin: 0;
+    padding: 0;
+  }
+  .testimonial-section h2,
+  .testimonial-section p {
+    margin-left: 0; /* Căn sát lề trái */
+    padding-left: 0; /* Loại bỏ mọi khoảng đệm nếu có */
+    width: 80%; /* Giữ nguyên chiều rộng */
+  }
+  
+  .testimonial-section h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .testimonial-section p {
+    font-size: 18px;
+    margin-top: 10px; /* Khoảng cách trên đoạn văn */
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #A6A6A6;
+  }
+  
+  .testimonial-section img {
+    display: block; /* Đảm bảo ảnh là block */
+    margin-left: 0; /* Đưa ảnh sát bên trái */
+    margin-bottom: 20px; /* Khoảng cách dưới ảnh */
+  }
+  blockquote {
+    font-size: 16px;
+    font-style: italic;
+    border-left: 4px solid #5cb85c;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #aaa;
+  }
+  
+  .testimonial-images {
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: center; /* Căn giữa các mục theo chiều ngang */
+    align-items: center; /* Căn giữa các mục theo chiều dọc (nếu cần) */
+    gap: 5px; /* Giảm khoảng cách giữa các mục */
+    margin-top: 20px; /* Khoảng cách phía trên nhóm hình ảnh */
+  }
+  
+  .testimonial-avatar {
+    width: 50px; /* Đặt kích thước cố định cho hình ảnh */
+    height: 50px;
+    border-radius: 50%; /* Làm tròn hình ảnh */
+    border: 2px solid #5cb85c; /* Đặt viền màu xanh lá */
+  }
+  .form-section {
+    background-color: #222938; /* Nền tối */
+    padding: 40px; /* Khoảng cách bên trong */
+    border-radius: 20px; /* Bo tròn góc form */
+    display: flex; /* Kích hoạt Flexbox */
+    flex-direction: column; /* Xếp nội dung theo cột */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    text-align: center; /* Căn giữa nội dung text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ */
+  }
+  
+  .form-section h2 {
+    font-size: 32px; /* Tăng kích thước chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #fff; /* Màu trắng */
+    text-align: center; /* Đảm bảo căn giữa chữ */
+    font-weight: bold; /* In đậm chữ */
+    width: 100%; /* Tiêu đề chiếm toàn bộ chiều ngang container */
+  }
+  .form-wrapper {
+    max-width: 500px; /* Giới hạn chiều rộng tối đa của form */
+    width: 100%; /* Đảm bảo form chiếm toàn bộ chiều ngang parent */
+    margin: auto;
+    text-align: left; /* Căn nội dung form về bên trái */
+  }
+  .form-group label {
+    font-size: 25px; /* Tăng kích thước chữ của nhãn */
+    font-weight: 500; /* In đậm nhãn */
+    color: #fff; /* Nhãn màu trắng */
+    margin-bottom: 10px;
+    display: block; /* Đặt nhãn trên input */
+  }
+  
+  .form-control {
+    background-color: #fff; /* Nền trắng cho input */
+    color: #000; /* Chữ màu đen trong input */
+    border: 1px solid #ccc; /* Viền màu xám nhạt */
+    border-radius: 16px; /* Viền cong hơn */
+    padding: 15px 20px; /* Khoảng cách bên trong input */
+    font-size: 18px; /* Tăng kích thước chữ trong input */
+    margin-bottom: 20px; /* Khoảng cách giữa các input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt khi focus */
+  }
+  
+  
+  .form-control:focus {
+    border-color: #5cb85c; /* Viền xanh lá khi được chọn */
+    box-shadow: 0 0 10px rgba(92, 184, 92, 0.5); /* Đổ bóng mềm khi focus */
+    outline: none;
+  }
+  
+  .form-control::placeholder {
+    color: #888; /* Màu placeholder nhạt */
+    font-style: italic; /* Chữ nghiêng cho placeholder */
+  }
+  
+  .request-demo-button {
+    background-color: #54BD95; /* Màu nền xanh lá */
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 12px; /* Viền bo tròn */
+    padding: 15px 30px; /* Tăng kích thước nút bấm */
+    font-size: 18px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ in đậm */
+    color: #fff; /* Chữ màu trắng */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    width: 100%; /* Nút bấm chiếm toàn bộ chiều rộng */
+  }
+  
+  .request-demo-button:hover {
+    background-color: #4cae4c; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  .free-trial-link {
+    text-align: right; /* Căn nội dung về bên phải */
+    margin-top: 20px;
+    font-size: 16px; /* Kích thước chữ */
+  }
+  
+  .free-trial-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .free-trial-link a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .body5-container {
+      padding-left: 10px; 
+      padding-right: 10px;
+    }
+  
+    .testimonial-section h2 {
+      font-size: 32px; 
+    }
+  
+    .testimonial-section p {
+      font-size: 16px; 
+    }
+  
+    .testimonial-images {
+      gap: 5px;
+    }
+  
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  
+    .form-section {
+      background-color: #222938;
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    .form-wrapper {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .form-group label {
+      font-size: 18px;
+    }
+  
+    .form-control {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .request-demo-button {
+      width: 100%;
+      padding: 12px 30px; 
+      font-size: 16px;
+    }
+  
+    .free-trial-link {
+      text-align: center;
+      font-size: 14px;
+    }
+  }

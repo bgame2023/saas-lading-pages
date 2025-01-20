@@ -1,0 +1,69 @@
+.body3-container {
+  text-align: center;
+
+}
+
+.body3-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.benefit-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.benefit-list .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+}
+
+.body3-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .body3-content h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .benefit-list li {
+    font-size: 1rem;
+  }
+
+  .body3-image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .body3-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .benefit-list li {
+    font-size: 0.9rem;
+  }
+
+  .body3-image img {
+    max-width: 100%;
+  }
+}
